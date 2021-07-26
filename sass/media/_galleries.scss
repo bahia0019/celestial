@@ -1,0 +1,22 @@
+.gallery {
+    display: grid;
+    grid-gap: 0.5em;
+}
+// Loops to enumerate the classes for gallery columns.
+@for $i from 2 through 9 {
+    .gallery-columns-#{$i} {
+        grid-template-columns: repeat(#{$i}, 1fr);
+    }
+}
+
+.gallery-item {
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.gallery-caption {
+    display: block;
+}
