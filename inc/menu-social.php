@@ -2,7 +2,7 @@
 /**
  * Inserts the social icons into the Righthand menu.
  */
-function ulu_watu_insert_social($items, $args) { 
+function celestial_insert_social($items, $args) { 
 	 
 	// Gets the social media icons.
 	if ( true == get_theme_mod( 'header_social', true ) ) {
@@ -47,4 +47,4 @@ function ulu_watu_insert_social($items, $args) {
 	}
 	return $items;
 }
-add_filter('wp_nav_menu_right-menu_items', 'ulu_watu_insert_social', 10, 2);
+add_filter('wp_nav_menu_right-menu_items', 'celestial_insert_social', 10, 2);

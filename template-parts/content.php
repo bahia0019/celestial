@@ -64,6 +64,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php ulu_watu_entry_footer(); ?>
+		<?php celestial_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

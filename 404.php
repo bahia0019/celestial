@@ -44,8 +44,8 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$ulu_watu_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'celestial' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$ulu_watu_archive_content" );
+					$celestial_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'celestial' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$celestial_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>

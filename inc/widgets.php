@@ -5,7 +5,7 @@
  */
 
 
-function fsc_ulu_watu_widgets_init() {
+function fsc_celestial_widgets_init() {
 
 	/**
 	 * Site Footer Widgets
@@ -46,5 +46,5 @@ function fsc_ulu_watu_widgets_init() {
 
 
 }
-add_action( 'widgets_init', 'fsc_ulu_watu_widgets_init' );
+add_action( 'widgets_init', 'fsc_celestial_widgets_init' );
 

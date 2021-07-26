@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * ensuring that all CSS & fonts still work.
  * It does not handle the customizer options, simply the frontend CSS.
  */
-class ulu_watu_Kirki {
+class celestial_Kirki {
 
 	/**
 	 * @static
@@ -397,4 +397,4 @@ class ulu_watu_Kirki {
 		}
 	}
 }
-new ulu_watu_Kirki();
+new celestial_Kirki();

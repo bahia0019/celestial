@@ -3,7 +3,7 @@
  * Add the Site Style section.
  */
 
-ulu_watu_Kirki::add_panel( 'site_styles', array(
+celestial_Kirki::add_panel( 'site_styles', array(
 	'title' => esc_html__( 'Site Styles', 'celestial' ),
 	'icon'  => 'dashicons-admin-appearance',
 ) );
@@ -12,7 +12,7 @@ ulu_watu_Kirki::add_panel( 'site_styles', array(
 /********************************
  * Add the Color section
 ******************************* */
-ulu_watu_Kirki::add_section( 'site_colors', array(
+celestial_Kirki::add_section( 'site_colors', array(
 	'title'      => esc_attr__( 'Site Colors', 'celestial' ),
 	'priority'   => 10,
 	'capability' => 'edit_theme_options',
@@ -20,7 +20,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	'icon'       => 'dashicons-admin-customizer',
 ) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'site_background_color',
 		'label'       => __( 'Site Background Color', 'celestial' ),
@@ -29,14 +29,14 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#ffffff',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_1',
 		'section'  => 'site_colors',
 		'default'  => '<div style="border-bottom:1px solid #999"></div>',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'color',
 		'settings' => 'menu_background_color',
 		'label'    => __( 'Menu Background Color', 'celestial' ),
@@ -44,7 +44,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'  => '#ffffff',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'color',
 		'settings' => 'menu_item_color',
 		'label'    => __( 'Menu Item Color', 'celestial' ),
@@ -52,7 +52,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'  => '#666',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'color',
 		'settings' => 'menu_item_hover_color',
 		'label'    => __( 'Menu Item Hover Color', 'celestial' ),
@@ -60,7 +60,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'  => '#999',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_2',
 		'section'  => 'site_colors',
@@ -68,7 +68,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	));
 
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'heading_color',
 		'label'       => __( 'Titles & Headings Color', 'celestial' ),
@@ -77,7 +77,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#666',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'heading_hover_color',
 		'label'       => __( 'Titles & Headings Hover Color', 'celestial' ),
@@ -86,14 +86,14 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#222',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_3',
 		'section'  => 'site_colors',
 		'default'  => '<div style="border-bottom:1px solid #999"></div>',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'text_color',
 		'label'       => __( 'Main Body Text Color', 'celestial' ),
@@ -102,14 +102,14 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#666',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_4',
 		'section'  => 'site_colors',
 		'default'  => '<div style="border-bottom:1px solid #999"></div>',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'site_accent_color',
 		'label'       => __( 'Accent Color', 'celestial' ),
@@ -118,7 +118,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#000',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'site_accent_hover_color',
 		'label'       => __( 'Accent Hover Color', 'celestial' ),
@@ -127,7 +127,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#fff',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'site_accent_text_color',
 		'label'       => __( 'Accent Text Color.', 'celestial' ),	
@@ -136,7 +136,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#fff',
 	));
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'color',
 		'settings'    => 'site_accent_text_hover_color',
 		'label'       => __( 'Accent Text Hover Color', 'celestial' ),
@@ -145,14 +145,14 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'default'     => '#000',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_5',
 		'section'  => 'site_colors',
 		'default'  => '<div style="border-bottom:1px solid #999"></div>',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'radio',
 		'settings'    => 'footer_color_select',
 		'label'       => esc_html__( 'Footer Colors', 'celestial' ),
@@ -166,7 +166,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		],
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'            => 'color',
 		'settings'        => 'footer_color',
 		'label'           => __( 'Footer Color', 'celestial' ),
@@ -181,7 +181,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		],
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'            => 'color',
 		'settings'        => 'footer_text_color',
 		'label'           => __( 'Footer Text Color', 'celestial' ),
@@ -201,7 +201,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	/********************************
 	 * Add the Typography section
 	******************************* */
-	ulu_watu_Kirki::add_section( 'typography', array(
+	celestial_Kirki::add_section( 'typography', array(
 		'title'      => esc_attr__( 'Typography', 'celestial' ),
 		'priority'   => 10,
 		'capability' => 'edit_theme_options',
@@ -209,7 +209,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'icon'       => 'dashicons-editor-italic',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'typography',
 		'settings'    => 'menu_font',
 		'label'       => esc_attr__( 'Menu Typography', 'celestial' ),
@@ -236,7 +236,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	/**
 	* Headings.
 	*/
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'typography',
 		'settings'    => 'headers_typography',
 		'label'       => esc_attr__( 'Headings Typography', 'celestial' ),
@@ -257,7 +257,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	/**
 	* Body font.
 	*/
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'typography',
 		'settings'    => 'body_typography',
 		'label'       => esc_attr__( 'Body Typography', 'celestial' ),
@@ -279,7 +279,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	/**
 	* Handwritten fonts.
 	*/
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'typography',
 		'settings'    => 'handwriting_typography',
 		'label'       => esc_attr__( 'Handwriting Typography', 'celestial' ),
@@ -301,7 +301,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	/**
 	 * Add the Image Appearance section
 	 */
-	ulu_watu_Kirki::add_section( 'image_appearance', array(
+	celestial_Kirki::add_section( 'image_appearance', array(
 		'title'      => esc_attr__( 'Image Appearance', 'celestial' ),
 		'priority'   => 10,
 		'capability' => 'edit_theme_options',
@@ -309,7 +309,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 		'icon'       => 'dashicons-format-image',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'color',
 		'settings' => 'caption_background_color',
 		'label'    => __( 'Caption Background Color', 'celestial' ),
@@ -322,7 +322,7 @@ ulu_watu_Kirki::add_section( 'site_colors', array(
 	) );
 
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 	'type'        => 'custom',
 	'settings'    => 'custom_setting',
 	'label'       => esc_html__( 'This is the label', 'celestial' ), // optional

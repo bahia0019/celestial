@@ -3,7 +3,7 @@
  * Add the Site Identity Options section.
  */
 
-ulu_watu_Kirki::add_panel( 'business_identity', array(
+celestial_Kirki::add_panel( 'business_identity', array(
 	'title' => esc_html__( 'Business Identity', 'celestial' ),
 	'icon'  => 'dashicons-tide',
 ) );
@@ -14,14 +14,14 @@ ulu_watu_Kirki::add_panel( 'business_identity', array(
  * Add the Menu Options section
 ******************************* */
 
-ulu_watu_Kirki::add_section( 'identity_logo', [
+celestial_Kirki::add_section( 'identity_logo', [
 	'title'      => esc_attr__( 'Logo', 'celestial' ),
 	'capability' => 'edit_theme_options',
 	'panel'      => 'business_identity',
 	'icon'       => 'dashicons-tide',
 ]);
 
-	ulu_watu_Kirki::add_field( 'celestial', [
+	celestial_Kirki::add_field( 'celestial', [
 		'type'        => 'image',
 		'settings'    => 'fsc_logo',
 		'option_type' => 'option',
@@ -36,9 +36,9 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 	]);
 
 
-	ulu_watu_Kirki::add_field( 'celestial', [
+	celestial_Kirki::add_field( 'celestial', [
 		'type'     => 'slider',
-		'settings' => 'ulu_watu_logo_width', //This is a THEME setting.
+		'settings' => 'celestial_logo_width', //This is a THEME setting.
 		'label'    => esc_attr__( 'Adjust the size of your logo here', 'celestial' ),
 		'section'  => 'identity_logo',
 		'default'  => 200,
@@ -54,7 +54,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 	 * Add the Business Info section
 	******************************* */
 
-	ulu_watu_Kirki::add_panel( 'identity_business_info', array(
+	celestial_Kirki::add_panel( 'identity_business_info', array(
 		'title' => esc_attr__( 'Business Info', 'celestial' ),
 		'panel' => 'business_identity',
 		'icon'  => 'dashicons-admin-network',
@@ -63,7 +63,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 	/**
 	 * Address
 	 */
-	ulu_watu_Kirki::add_section( 'identity_business_info_address', array(
+	celestial_Kirki::add_section( 'identity_business_info_address', array(
 		'title'       => esc_attr__( 'Name, Address, Phone', 'celestial' ),
 		'capability'  => 'edit_theme_options',
 		'panel'       => 'identity_business_info',
@@ -72,7 +72,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 
 	) );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -82,14 +82,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'settings' => 'separator-2',
 			'section'  => 'identity_business_info_address',
 			'type'     => 'custom',
 			'default'  => '<hr>',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -99,7 +99,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -109,7 +109,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -119,7 +119,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -129,7 +129,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -139,14 +139,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'separator-3',
 			'section'  => 'identity_business_info_address',
 			'default'  => '<hr>',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'text',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -187,7 +187,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		];
 
 
-		ulu_watu_Kirki::add_section( 'identity_business_info_hours', array(
+		celestial_Kirki::add_section( 'identity_business_info_hours', array(
 			'title'       => esc_attr__( 'Business Hours', 'celestial' ),
 			'capability'  => 'edit_theme_options',
 			'panel'       => 'identity_business_info',
@@ -196,14 +196,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		) );
 
 		// Monday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'monday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Monday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -215,7 +215,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'            => 'select',
 			'option_type'     => 'option',
 			'option_name'     => 'fsc_options',
@@ -235,7 +235,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'            => 'select',
 			'option_type'     => 'option',
 			'option_name'     => 'fsc_options',
@@ -256,14 +256,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Tuesday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'tuesday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Tuesday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -275,7 +275,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'            => 'select',
 			'option_type'     => 'option',
 			'option_name'     => 'fsc_options',
@@ -295,7 +295,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'            => 'select',
 			'option_type'     => 'option',
 			'option_name'     => 'fsc_options',
@@ -316,7 +316,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Wednesday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'wednesday',
 			'section'  => 'identity_business_info_hours',
@@ -324,7 +324,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		] );
 
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -336,7 +336,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -356,7 +356,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -377,14 +377,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Thursday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'thursday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Thursday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -396,7 +396,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -416,7 +416,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -437,14 +437,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Friday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'friday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Friday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -456,7 +456,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -476,7 +476,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -497,14 +497,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Saturday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'saturday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Saturday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -516,7 +516,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -536,7 +536,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -557,14 +557,14 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		]);
 
 		// Sunday.
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'     => 'custom',
 			'settings' => 'sunday',
 			'section'  => 'identity_business_info_hours',
 			'default'  => '<h3>Sunday</h3>',
 		] );
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'checkbox',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -576,7 +576,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -596,7 +596,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			],
 		]);
 
-		ulu_watu_Kirki::add_field( 'celestial', [
+		celestial_Kirki::add_field( 'celestial', [
 			'type'        => 'select',
 			'option_type' => 'option',
 			'option_name' => 'fsc_options',
@@ -621,7 +621,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 		 * Add the Social Links section - (Tied to Yoast SEO for Schema)
 		 ******************************* */
 
-		ulu_watu_Kirki::add_section( 'social-links', array(
+		celestial_Kirki::add_section( 'social-links', array(
 			'title'       => esc_attr__( 'Social Links', 'celestial' ),
 			'description' => __( 'Add your social media links here.', 'celestial' ),
 			'capability'  => 'edit_theme_options',
@@ -629,7 +629,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'icon'        => 'dashicons-facebook',
 		) );
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'link',
 			'settings'    => 'facebook_site',
 			'option_type' => 'option',
@@ -641,7 +641,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		));
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'text',
 			'settings'    => 'twitter_site',
 			'option_type' => 'option',
@@ -653,7 +653,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		) );
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'link',
 			'settings'    => 'instagram_url',
 			'option_type' => 'option',
@@ -665,7 +665,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		) );
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'link',
 			'settings'    => 'pinterest_url',
 			'option_type' => 'option',
@@ -677,7 +677,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		) );
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'link',
 			'settings'    => 'youtube_url',
 			'option_type' => 'option',
@@ -689,7 +689,7 @@ ulu_watu_Kirki::add_section( 'identity_logo', [
 			'transport'   => 'postMessage',
 		) );
 
-		ulu_watu_Kirki::add_field( 'celestial', array(
+		celestial_Kirki::add_field( 'celestial', array(
 			'type'        => 'link',
 			'settings'    => 'linkedin_url',
 			'option_type' => 'option',

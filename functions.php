@@ -7,7 +7,7 @@
  * @package celestial
  */
 
-if ( ! function_exists( 'ulu_watu_setup' ) ) :
+if ( ! function_exists( 'celestial_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'ulu_watu_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function ulu_watu_setup() {
+	function celestial_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -70,7 +70,7 @@ if ( ! function_exists( 'ulu_watu_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'ulu_watu_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'celestial_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -94,13 +94,13 @@ if ( ! function_exists( 'ulu_watu_setup' ) ) :
 		add_theme_support('align-wide');
 	}
 endif;
-add_action( 'after_setup_theme', 'ulu_watu_setup' );
+add_action( 'after_setup_theme', 'celestial_setup' );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function ulu_watu_scripts() {
+function celestial_scripts() {
 	wp_enqueue_style( 'celestial-style', get_stylesheet_uri(), array(), date( 'Ymd  H:i:s' )  );
 
 	wp_enqueue_script( 'celestial-navigation', get_template_directory_uri() . '/js/navigation.js', array(), date( 'Ymd  H:i:s' ), true );
@@ -120,18 +120,18 @@ function ulu_watu_scripts() {
 	);
 
 }
-add_action( 'wp_enqueue_scripts', 'ulu_watu_scripts' );
+add_action( 'wp_enqueue_scripts', 'celestial_scripts' );
 
 /**
  * De-enqueue scripts and styles that aren't needed.
  */
-function ulu_watu_dequeue_scripts() {
+function celestial_dequeue_scripts() {
 	// Prevents Dashicons from loading when users aren't logged in and Admin Bar isn't shown.
 	if ( ! is_user_logged_in() ) {
 		wp_deregister_style( 'dashicons' );
     }
 }
-add_action( 'wp_enqueue_scripts', 'ulu_watu_dequeue_scripts' );
+add_action( 'wp_enqueue_scripts', 'celestial_dequeue_scripts' );
 
 /**
  * Implement the Custom Header feature.

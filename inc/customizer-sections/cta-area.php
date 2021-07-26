@@ -3,7 +3,7 @@
 /**
  * Add the Header Options section
  */
-ulu_watu_Kirki::add_section( 'cta_options', array(
+celestial_Kirki::add_section( 'cta_options', array(
 	'title'      => esc_attr__( 'Call To Action Options', 'celestial' ),
 	'priority'   => 10,
 	'capability' => 'edit_theme_options',
@@ -13,7 +13,7 @@ ulu_watu_Kirki::add_section( 'cta_options', array(
 	/**
 	* Display Recent Posts.
 	*/
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'toggle',
 		'settings'    => 'footer_recent_posts',
 		'label'       => esc_attr__( 'Recent Blog Posts', 'celestial' ),
@@ -22,7 +22,7 @@ ulu_watu_Kirki::add_section( 'cta_options', array(
 		'default'     => '1',
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'slider',
 		'settings' => 'number_recent_posts_columns',
 		'label'    => esc_attr__( 'Number of columns', 'celestial' ),
@@ -42,7 +42,7 @@ ulu_watu_Kirki::add_section( 'cta_options', array(
 		],
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'slider',
 		'settings' => 'number_recent_posts_rows',
 		'label'    => esc_attr__( 'Number of rows', 'celestial' ),
@@ -62,7 +62,7 @@ ulu_watu_Kirki::add_section( 'cta_options', array(
 		],
 	) );
 
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'     => 'custom',
 		'settings' => 'divide_10',
 		'section'  => 'cta_options',
@@ -72,7 +72,7 @@ ulu_watu_Kirki::add_section( 'cta_options', array(
 	/**
 	* Display Testimonials.
 	*/
-	ulu_watu_Kirki::add_field( 'celestial', array(
+	celestial_Kirki::add_field( 'celestial', array(
 		'type'        => 'toggle',
 		'settings'    => 'cta_testimonials',
 		'label'       => esc_attr__( 'Client Testimonials', 'celestial' ),
